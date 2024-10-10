@@ -1,11 +1,19 @@
+import styled from 'styled-components'
 import './App.css'
+import CardList from './CardList'
 
 function App() {
 
+  const Wrapper = styled.section`
+    padding: 4em;
+    background: papayawhip;
+  `;
+
   return (
-    <>
-      <h1>Infinite Scroll with React</h1>
-    </>
+    <Wrapper>
+      <h1>Welcome human!</h1>
+      <CardList/>
+    </Wrapper>
   )
 }
 
